@@ -1,0 +1,26 @@
+.head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Sicon{
+    font-family: 'Red Hat Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 36px;
+    padding: 10px 15px;
+    background-color: blue;
+    color: white;
+}
+.Shop{
+    padding: 10px;
+    
+}
+nav{
+    height: 72px;
+    background: #FFC970;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}

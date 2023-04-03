@@ -1,0 +1,23 @@
+<div class="alado">
+    <form class="formulario" (submit)="onSubmit()">
+        <p>Nombre del producto:</p>
+        <input type="text" [(ngModel)]="NameF" name="name">
+        <p>Precio:</p>
+        <input type="text" [(ngModel)]="PriceF" name="price">
+        <p>Description:</p>
+        <input type="text" [(ngModel)]="DesF" name="description">
+        <p>Ruta de la imagen:</p>
+        <input type="text" [(ngModel)]="imgF" name="image">
+        <p>Opiniones:</p>
+        <input type="text" [(ngModel)]="OpiF" name="stars">
+        <button type="submit">Submit</button>
+    </form>
+    <div class="preview">
+        <p>Preview del producto:</p>
+        <img class="pro" src="{{imgF}}">
+        <p class="">{{NameF}}</p>
+        <p>{{DesF}}</p>
+        <p>{{PriceF}}</p>
+        <p>{{OpiF}}</p>
+    </div>
+</div>

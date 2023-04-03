@@ -1,0 +1,13 @@
+<div>
+    <input [(ngModel)]="filterText" placeholder="Search products..." />
+</div>
+
+<div class="card" *ngFor="let product of productes | filterProducts:filterText">
+    <div class="productss">
+        <img class="pro" src="{{product.image}}"/>
+        <p class="Des">{{product.name}}</p>
+        <p class="Des">{{product.description}}</p>
+        <p class="pric">{{product.price}}$</p>
+        <app-star-rating [rating]="product.rating"></app-star-rating>
+    </div>
+</div>
